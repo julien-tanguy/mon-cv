@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!--FONT roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Boostrap Css & Jq-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Css -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <title>j.Tanguy - Développeur web</title>
+  </head>
+  <body id="index">
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
+        <a class="navbar-brand mobileLogo" href="#"> <img alt="logo_cv" title="logo_cv" src="assets/img/logo_black.png"  /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navbar-brand navLogo" href="#"> <img alt="logo_cv" title="logo_cv" src="assets/img/logo_black.png"  /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/about.html">À propos de moi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/projects.html">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="container-fluid row m-0 p-0" id="about">
+      <a href="views/about.html" class="container p-0"><div class=" aboutPictureLink">
+        <div class="row" id="zoomAbout">
+          <div class="aboutLink col-md-6 col-sm-12">
+            <h1 class="ml-xl-5">Julien TANGUY,<br> Développeur Web</h1>
+            <p class="ml-xl-5">À propos de moi...</p>
+          </div>
+          <div class="aboutPicture col-md-6 col-sm-12">
+            <img src="assets/img/julien.png" alt="ma photo de présentation">
+          </div>
+        </div>
+      </div></a>
+    </section>
+    <section class="container" id="skills">
+      <div class="row">
+        <div class="text-center col-12 mt-5 mb-5">
+          <h1>Mes Compétences</h1>
+        </div>
+        <div class="cards mb-5 col-12 row justify-content-center" >
+            <div class="text-center m-2" style="width: 18rem;">
+              <i class="fab fa-html5 fa-9x pt-4 pb-4"></i>
+                <h2 class="card-title">HTML 5</h2>
+                <p class="card-text">Maquetter une application web et mobile, de concevoir une interface utilisateur claire et épurée.</p>
+            </div>
+            <div class="text-center m-2" style="width: 18rem;">
+              <i class="fab fa-css3-alt fa-9x pt-4 pb-4"></i>
+              <h2 class="card-title">CSS 3</h2>
+              <p class="card-text">Utiliser le CSS pour mettre en forme mes applications web.</p>
+            </div>
+            <div class=" text-center m-2" style="width: 18rem;">
+              <i class="fab fa-js-square fa-9x pt-4 pb-4"></i>
+              <h2 class="card-title">Javascript</h2>
+              <p class="card-text">Déployer des sites web modernes et dynamiques grace à javaScript pour ameliorer l'experience utilisateur de mes applications.</p>
+            </div>
+            <div class="text-center m-2" style="width: 18rem;">
+              <i class="fab fa-php fa-9x pt-4 pb-4"></i>
+              <h2 class="card-title">PHP</h2>
+              <p class="card-text">Administrer une base de données et réaliser des sites web dynamiques, en traitant de manière sécurisée les informations en provenance de formulaires grâce au langage php</p>
+            </div>
+            <div class="text-center m-2" style="width: 18rem;">
+              <i class="fab fa-wordpress fa-9x pt-4 pb-4"></i>
+              <h2 class="card-title">Wordpress</h2>
+              <p class="card-text">utiliser le CMS Wordpress pour créer et gérer différents types de sites Web : site vitrine, site de vente en ligne, blog ou portfolio.</p>
+            </div>
+            <div class="text-center m-2" style="width: 18rem;">
+              <i class="fab fa-bootstrap fa-9x pt-4 pb-4"></i>
+              <h2 class="card-title">Bootstrap</h2>
+              <p class="card-text">Adopter un design responsive afin de rendre mes applications les plus adaptées à toutes les tailles d'écran tout en garantissant la même facilitée d'utilisation pour ne pas diminuer l'experience utilisateur.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="projects">
+      <a href="views/projects.html" class="container">
+        <div class="row projectsPresentation" id="zoomProject">
+          <div class="projectsLink col-md-6 col-sm-12">
+            <h1 class="ml-xl-5">Mes projets</h1>
+            <p class="ml-xl-5">La présentation des projets que j'ai réalisés jusqu'ici pour vous donner un aperçu de mon travail.</p>
+          </div>
+          <div class="projectsPicture col-md-6 col-sm-12 text-center">
+            <img src="assets/img/macbookPresentation.png" alt="photo de presentation d'un projet">
+          </div>
+        </div>
+      </a>
+    </section>
+    
+    <footer class="row text-white m-0 p-0" id="contact">
+      <div class="footerTitle col-lg-6 col-xs-12 text-center">
+        <h1>Contacter moi</h1>
+      </div>
+      <div class="footerLinks col-lg-6 col-xs-12 text-lg-left text-center">
+        <div class="col-12 footer-link">
+            <a href="mailto:j.tanguy24@gmail.com" title="lien vers mon mail">Email</a>
+        </div>
+        <div class="col-12 footer-link">
+            <a href="https://github.com/julien-tanguy" title="lien vers mon compte Github">Github</a>
+        </div>
+        <div class="col-12 footer-link">
+            <a href="http://www.linkedin.com/in/julien-tanguy-devweb" title="lien vers mon compte Linkedin">LinkedIn</a>
+        </div>
+        <div class="col-12 footer-link">
+            <a href="https://www.facebook.com/julien.tanguy.790" title="lien vers mon compte Facebook">Facebook</a>
+        </div>
+        <div class="col-12 footer-link">
+            <a href="https://www.instagram.com/julien_t24/" title="lien vers mon compte Instagram">Instagram</a>
+        </div>
+      </div>
+      <div class="footerCopy col-12 text-center">
+        <p>© Julien Tanguy</p>
+      </div>
+    </footer>
+  <!-- Boostrap scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <!-- Custom scripts -->
+  <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+

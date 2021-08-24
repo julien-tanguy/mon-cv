@@ -1,0 +1,404 @@
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroy/gilroy-light-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy/gilroy-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyBold/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroyBold/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0; 
+}
+#index {
+    background-color: #EFF5FD;
+}
+#aboutPage{
+    background-color: #000000;
+}
+#projectsPage{
+    background-color: #ffffff;
+}
+header, section {
+    font-family: 'gilroylight','open sans', sans-serif;
+}
+h1{
+    font-family: 'gilroyextrabold','open sans', sans-serif;
+}
+/*! NAVBAR */
+#navbar{
+    background-color: #1D1D1F;
+    color: rgb(110, 110, 110);
+    padding: 40px 10px;
+    transition: 0.5s;
+}
+#navbar button{
+    color: white;
+}
+#navbar a{
+    text-decoration: none;
+    color: inherit;
+    margin: 10px 20px;
+}
+#navbar a:hover{
+    color: #ffffff;
+}
+nav ul{
+    margin: 0 auto;
+}
+/*! FOOTER */
+footer{
+    background-color: #1D1D1F;
+    min-height: 50vh;
+    font-family: 'gilroyextrabold','open sans', sans-serif;
+}
+.footer-link a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-link a:hover{
+    color: rgb(110, 110, 110);
+} 
+/*! ABOUT */
+#about, #skills, #projects{
+    margin-bottom: 50px!important;
+}
+#about a, #projects a{
+    text-decoration: none;
+}
+.aboutPictureLink, .aboutLink, .aboutPicture{
+    background-color: #040404;
+}
+.aboutPictureLink{
+    margin-top: 150px;
+    overflow: hidden;
+}
+.aboutLink{
+    color: #ffffff;
+}
+/*! SKILLS */
+#skills{
+    background-color: #FDF0F2;
+}
+#skills h1, #skills h2, #skills p{
+    color: #770012;
+}
+.cards i{
+    color: #770012;
+}
+/*! PROJECTS */
+#projects{
+    background-color: #E0E9F5;
+}
+#projects h1, #projects p, #projects a{
+    color: #00397C;
+}
+/*! ABOUTPAGE */
+#myPresentation{
+    margin-top: 150px;
+}
+#aboutPage h1, #aboutPage p{
+    color: #ffffff;
+}
+/*! PROJECTSPAGE */
+#projectsPagePresentation{
+    margin-top: 150px;
+}
+#projectsPagePresentation h1, #projectsPagePresentation p, #projetsReview h1, #projetsReview p, #projetsReview ol{
+    color: #00397C;
+}
+#projectsPage h2{
+    color: #A6BBD5;
+    font-size: 40px;
+}
+.photoPresentation2{
+    width: 90%;
+    max-height: 90%;
+}
+
+
+
+
+/*! ------------------------------------------------------------------MEDIA QUERIES */
+/* tableau dashboard mobile */
+@media only screen and (max-width: 575px) {
+    /*! Navbar */
+    .navLogo{
+        display: none;
+    }
+    .mobileLogo{
+        display: block;
+    }
+    /*! Footer */
+    .footerTitle h1{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 70px;
+    }
+    .footerLinks{
+        margin-bottom: 50px;
+    }
+    .footer-link{
+        padding: 5px 0px 5px 0px;
+        font-size: 23px;
+    }
+    /*! ABOUT */
+    .aboutPictureLink, .aboutPicture{
+        min-height: 600px;
+    }
+    .aboutLink{
+        min-height: 100px;
+    }
+    .aboutLink{
+        padding: 50px 40px 0px 40px;
+    }
+    .aboutLink h1{
+        margin-bottom: 15px;
+    }
+    .aboutPicture img{
+        height: 100%;
+    }
+    /*! PROJECTS */
+    .projectsPresentation{
+        min-height: 600px;
+    }
+    .projectsLink{
+        padding: 100px 40px 0px 40px;
+    }
+    .projectsLink h1{
+        margin-bottom: 50px;
+    }
+    
+    .projectsPicture img{
+        max-width: 90%;
+    }
+    /*! ABOUTPAGE & PROJECTSPAGE*/
+    #aboutPage h1{
+        font-size: 60px;
+    }
+    #aboutPage p, #projectsPagePresentation p, #projetsReview p{
+        font-size: 23px;
+        padding: 0px 20px 0px 20px;
+    }
+    #projetsReview ol{
+        font-size: 23px;
+        padding: 0px 50px 0px 50px;
+    }
+    /*! pictureMe */
+    .galleryImg1{
+        height: 800px;
+        overflow: hidden;
+    }
+    .galleryImg2{
+        height: 400px;
+        overflow: hidden;
+    }
+    .galleryImg2 img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .galleryImg1 img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    #projectsPagePresentation h1, #projetsReview h1{
+        font-size: 50px;
+    }
+    .photoPresentation1{
+        margin-top: 340px;
+        width: 90%;
+    }
+    
+
+	
+}
+/* media tablet */
+@media screen and (min-width: 575px) {
+    /*! Navbar */
+    .navLogo{
+        display: none;
+    }
+    .mobileLogo{
+        display: block;
+    }
+    /*! Footer */
+    .footerTitle h1{
+    
+        font-size: 80px;
+    }
+    .footerLinks{
+        margin-bottom: 50px;
+    }
+    .footer-link{
+        
+        font-size: 30px;
+    }
+    /*! ABOUT */
+    .aboutPictureLink, .aboutPicture{
+        min-height: 600px;
+    }
+    .aboutLink{
+        min-height: 100px;
+    }
+    .aboutLink{
+        padding: 50px 0px 0px 40px;
+    }
+    .aboutLink h1{
+        margin-bottom: 100px;
+    }
+    .aboutPicture img{
+        height: 100%;
+    }
+    /*! PROJECTS */
+    .projectsPresentation{
+        height: 600px;
+    }
+    .projectsLink{
+        padding: 100px 0px 0px 40px;
+    }
+    .projectsLink h1{
+        margin-bottom: 100px;
+    }
+    .projectsPicture{
+        line-height: 600px;
+    }
+    .projectsPicture img{
+        width: 90%;
+    }
+    /*! ABOUTPAGE & PROJECTPAGE */
+    #aboutPage h1, #projectsPagePresentation h1, #projetsReview h1{
+        font-size: 80px;
+    }
+    #aboutPage p, #projectsPagePresentation p{
+        font-size: 27px;
+        padding: 0px 100px 0px 100px;
+    }
+    #projetsReview p, #projetsReview ol{
+        font-size: 23px;
+        padding: 0px 100px 0px 100px;
+    }
+    /*! pictureMe */
+    .galleryImg1, .galleryImg2{
+        height: 800px;
+        overflow: hidden;
+    }
+    .galleryImg2 img{
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+    }
+    .galleryImg1 img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .photoPresentation1{
+        margin-top: 200px;
+        width: 90%;
+    }
+    
+}
+/* media desktop */
+@media screen and (min-width: 1000px) {
+    /*! Navbar */
+    .navLogo{
+        display: block;
+    }
+    .mobileLogo{
+        display: none;
+    }
+    /*! Footer */
+    .footerTitle h1{
+        padding: 100px 0 0 0px;
+        font-size: 80px;
+    }
+    .footerLinks{
+        padding: 50px 100px 0px 0px;
+    }
+    .footer-link{
+        padding: 5px 0px 5px 200px;
+        font-size: 30px;
+    }
+    /*! ABOUT */
+    .aboutPictureLink, .aboutLink, .aboutPicture{
+        height: 700px;
+        transition: 0.2s;
+    }
+    .aboutLink{
+        padding: 100px 0px 0px 40px;
+    }
+    .aboutLink h1{
+        margin-bottom: 150px;
+        
+    }
+    .aboutPicture img{
+        height: 100%;
+    }
+    #zoomAbout, #zoomProject{
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    #zoomAbout:hover, #zoomProject:hover{
+        transform: scale(1.1);
+    }
+    /*! PROJECTS */
+    .projectsPresentation{
+        height: 700px;
+    }
+    
+    .projectsLink{
+        padding: 100px 0px 0px 40px;
+    }
+    .projectsLink h1{
+        margin-bottom: 150px;
+        
+    }
+    .projectsPicture{
+        line-height: 700px;
+    }
+    .projectsPicture img{
+        width: 85%;
+    }
+    /*! ABOUTPAGE  & POROJECTSPAGE*/
+    #aboutPage h1, #projectsPagePresentation h1, #projetsReview h1{
+        font-size: 80px;
+    }
+    #aboutPage p, #projectsPagePresentation p{
+        font-size: 27px;
+        padding: 0px 150px 0px 150px;
+    }
+    #projetsReview p, #projetsReview ol{
+        font-size: 23px;
+        padding: 0px 150px 0px 150px;
+    }
+    /*! pictureMe */
+    .galleryImg1, .galleryImg2{
+        height: 1000px;
+        overflow: hidden;
+    }
+    .galleryImg2 img{
+        width: 100%;
+        height: 1000px;
+        object-fit: cover;
+    }
+    .galleryImg1 img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .photoPresentation1{
+        margin-top: 200px;
+        width: 90%;
+    }
+    
+}
+
+
